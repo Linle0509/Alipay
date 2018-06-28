@@ -22,7 +22,7 @@ cookies_dict = {}
 # 将cookies转化为字典
 for i in range(len(cookies)):
     cookies_dict[list(cookies[i].keys())[0]] = list(cookies[i].values())[0]
-# 获取session 并讲cookies写入session
+# 获取session 并将cookies写入session
 session = requests.Session()
 session.headers = headers
 session.cookies.update(cookies_dict)
